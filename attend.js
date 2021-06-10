@@ -30,3 +30,7 @@ function deleteRow(row) {
     var d = row.parentNode.parentNode.rowIndex;
     document.getElementById('numnam').deleteRow(d);
  }
+ function search(row){
+    var t = document.getElementById('numnam');
+    var num = t.tBodies[0].children[row.parentNode.parentNode.rowIndex].children[0].innerText
+ }
