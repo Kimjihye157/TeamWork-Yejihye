@@ -26,3 +26,7 @@ function change1(){
     var a1 = document.getElementById("md_1");
     var a2 = document.getElementById("md_2");
 }
+function deleteRow(row) {
+    var d = row.parentNode.parentNode.rowIndex;
+    document.getElementById('numnam').deleteRow(d);
+ }
