@@ -20,5 +20,9 @@ function add() {
     newCell3.innerHTML = "<input type='radio' id='md_1' name='ok' onclick='change1();'>";
     newCell4.innerHTML = "<input type='radio' id='md_2' name='ok' onclick='change1();'>";
     newCell5.innerHTML = "<input type='button' id='md_3' value='삭제' onclick='deleteRow(this);'>";
-
+    newCell6.innerHTML = "<input type='button' id='md_3' value='학생 조회' onclick='search(this);'>";
+}
+function change1(){
+    var a1 = document.getElementById("md_1");
+    var a2 = document.getElementById("md_2");
 }
