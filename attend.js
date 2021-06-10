@@ -18,5 +18,7 @@ function add() {
     newCell1.innerText = document.getElementById('num_1').value;
     newCell2.innerText = document.getElementById('nam_1').value;
     newCell3.innerHTML = "<input type='radio' id='md_1' name='ok' onclick='change1();'>";
+    newCell4.innerHTML = "<input type='radio' id='md_2' name='ok' onclick='change1();'>";
+    newCell5.innerHTML = "<input type='button' id='md_3' value='삭제' onclick='deleteRow(this);'>";
 
 }
