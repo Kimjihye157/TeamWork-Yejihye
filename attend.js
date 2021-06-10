@@ -4,4 +4,14 @@ function add() {
 
     alert(n1 + m1 + " 학생을 '코딩과 인생' 과목 수강생으로 추가하시겠습니까?");
     alert(n1 + m1 + " 학생이 '코딩과 인생' 과목 수강생으로 추가되었습니다!");
+
+    const table = document.getElementById('numnam');
+    const newRow = table.insertRow();
+
+    const newCell1 = newRow.insertCell(0);
+    const newCell2 = newRow.insertCell(1);
+    const newCell3 = newRow.insertCell(2);
+    const newCell4 = newRow.insertCell(3);
+    const newCell5 = newRow.insertCell(4);
+    const newCell6 = newRow.insertCell(5);
 }
