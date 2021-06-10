@@ -33,4 +33,6 @@ function deleteRow(row) {
  function search(row){
     var t = document.getElementById('numnam');
     var num = t.tBodies[0].children[row.parentNode.parentNode.rowIndex].children[0].innerText
+    var name = t.tBodies[0].children[row.parentNode.parentNode.rowIndex].children[1].innerText
+    alert( num + ' '+ name + ' 학생은 2학년입니다.');
  }
