@@ -1,3 +1,4 @@
+var idx = 0;
 function add() {
     var n1 = document.getElementById("num_1").value;
     var m1 = document.getElementById("nam_1").value;
@@ -17,10 +18,12 @@ function add() {
 
     newCell1.innerText = document.getElementById('num_1').value;
     newCell2.innerText = document.getElementById('nam_1').value;
-    newCell3.innerHTML = "<input type='radio' id='md_1' name='ok' onclick='change1();'>";
-    newCell4.innerHTML = "<input type='radio' id='md_2' name='ok' onclick='change1();'>";
+    newCell3.innerHTML = "<input type='radio' id='md_1' name='radio_"+idx+"' name='ok' onclick='change1();'>";
+    newCell4.innerHTML = "<input type='radio' id='md_2' name='radio_"+idx+"' name='ok' onclick='change1();'>";
     newCell5.innerHTML = "<input type='button' id='md_3' value='삭제' onclick='deleteRow(this);'>";
     newCell6.innerHTML = "<input type='button' id='md_3' value='학생 조회' onclick='search(this);'>";
+
+    idx += 1;
 }
 function change1(){
     var a1 = document.getElementById("md_1");
