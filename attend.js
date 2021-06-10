@@ -14,4 +14,9 @@ function add() {
     const newCell4 = newRow.insertCell(3);
     const newCell5 = newRow.insertCell(4);
     const newCell6 = newRow.insertCell(5);
+
+    newCell1.innerText = document.getElementById('num_1').value;
+    newCell2.innerText = document.getElementById('nam_1').value;
+    newCell3.innerHTML = "<input type='radio' id='md_1' name='ok' onclick='change1();'>";
+
 }
